@@ -1,3 +1,5 @@
+#include <ArduinoUnit.h>
+#include <ArduinoUnitMock.h>
 #include <NewPing.h>
 
 // Default speed. Range 0 to 255
@@ -52,5 +54,5 @@ void setup(){
 // This runs continuously until you tell it to stop with exit(0);
 // The last comand called when you exit will continue to run.
 void loop() {
-  
+  Test::run();
 }
