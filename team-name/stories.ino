@@ -1,4 +1,4 @@
-// Story 1
+// Story 1 function
 void story_1() {
   
 }
