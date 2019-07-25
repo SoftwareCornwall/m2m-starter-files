@@ -37,7 +37,7 @@ void setup(){
   // Baud rate for the serial monitor
   Serial.begin(9600);
 
-  // Setup the motor counts
+  // Setup the motor interupt counts
   pinMode(left_motor_interrupt_pin, INPUT_PULLUP);
   pinMode(right_motor_interrupt_pin, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(left_motor_interrupt_pin), left_motor_pulse_interrupt, RISING);
@@ -47,6 +47,6 @@ void setup(){
 // Your code goes in the loop. 
 // This runs continuously until you tell it to stop with exit(0);
 // The last comand called when you exit will continue to run.
-void loop() {
+void loop(){
   Test::run();  // Leave this line here
 }
